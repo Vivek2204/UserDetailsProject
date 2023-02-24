@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -20,16 +20,14 @@ import {
   DELETE_MODEL_TEXT,
   DELETE_SUCCESS,
   EDIT_HEADER,
-  EMAIL_REGEX,
   OK,
-  PHONE_REGEX,
   UPDATE_SUCCESS,
-  WEBSITE_REGEX,
 } from "../../Constants";
 import Loader from "../../loader/Loader";
 import { Alert, Snackbar } from "@mui/material";
 import { UserContext } from "../../context/UserContext";
 import { isEmpty, validateData } from "../../CommonMethods";
+import { AVATAR_URL } from "../../../config/dev.env";
 
 export default function UserCard() {
   const userContext = useContext(UserContext);
@@ -225,7 +223,7 @@ export default function UserCard() {
                     variant="top"
                     className="usercard-card-img"
                     src={
-                      "https://avatars.dicebear.com/v2/avataaars/" +
+                      AVATAR_URL +
                       user.username +
                       ".svg?options[mood][]=happy"
                     }

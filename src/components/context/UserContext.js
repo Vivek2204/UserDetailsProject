@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
+import { GET_USER_URL } from '../../config/dev.env';
 
 export const UserContext=createContext( {
   users: [],
@@ -12,7 +13,7 @@ const UserContextProvider =(props)=>{
       }, [])
     
     const fetchData = async () => {
-        const parsedData = await fetch('https://jsonplaceholder.typicode.com/users')
+        const parsedData = await fetch(GET_USER_URL)
           .then((response) => response.text())
           .then((data) => {
             return JSON.parse(data)
