@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../../models/BasicModel/ModelElements/Image/Image'
+import Image from './ImageElement/Image'
 import './UserDetails.css'
 
 export default function UserDetails({ phoneIcon,imgSrc, data, altText }) {

@@ -11,7 +11,6 @@ import EditIcon from "../../../assets/edit.png";
 import DeleteIcon from "../../../assets/dustbin.png";
 import HollowHeartIcon from "../../../assets/hollow_heart.png";
 import FilledHeartIcon from "../../../assets/filled_heart.png";
-import Image from "../../models/BasicModel/ModelElements/Image/Image";
 import BasicModel from "../../models/BasicModel/BasicModel";
 import {
   AVARTAR_MODE,
@@ -29,6 +28,7 @@ import { Alert, Snackbar } from "@mui/material";
 import { UserContext } from "../../context/UserContext";
 import { isEmpty, validateData } from "../../CommonMethods";
 import { AVATAR_URL } from "../../../config/dev.env";
+import Image from "./UserDetails/ImageElement/Image";
 
 export default function UserCard() {
   const userContext = useContext(UserContext);
