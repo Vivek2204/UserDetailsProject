@@ -1,0 +1,9 @@
+.formelement-required:before {
+    content:" *";
+    margin-right: 5px;
+    color: red;
+  }
+
+  .formelement-required{
+    padding: 10px 5px;
+  }

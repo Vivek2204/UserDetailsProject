@@ -1,0 +1,12 @@
+.userdetails-div-image {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin: 5px 0px;
+}
+
+.userdetails-details{
+    font-size: 14px;
+}

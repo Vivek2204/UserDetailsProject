@@ -1,0 +1,39 @@
+.usercard-card-borderRadius {
+    border-radius: 0px !important;
+}
+
+.usercard-card-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.usercard-card-img {
+    width: 60% !important;
+}
+
+.usercard-div-userData{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.actionDiv{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color:#E0242B;
+}
