@@ -1,9 +1,9 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/Modal'
-import FormElement from './ModelElements/FormElement/FormElement'
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import FormElement from "./ModelElements/FormElement/FormElement";
 
-export default function BasicModel (props) {
+export default function BasicModel(props) {
   const {
     show,
     handleClose,
@@ -13,8 +13,8 @@ export default function BasicModel (props) {
     primaryButton,
     secondaryButton,
     handleChange,
-    errorMessage
-  } = props
+    errorMessage,
+  } = props;
 
   return (
     <Modal show={show} onHide={handleClose}>
@@ -35,7 +35,7 @@ export default function BasicModel (props) {
                 placeHolder={element.placeHolder}
                 handleChange={(e) => handleChange(e, element.labelText)}
               />
-            )
+            );
           })}
         {errorMessage && errorMessage?.show && (
           <div className="errorMessage">{errorMessage.message}</div>
@@ -44,7 +44,10 @@ export default function BasicModel (props) {
 
       <Modal.Footer>
         {secondaryButton && (
-          <Button variant="outline-secondary" onClick={secondaryButton.onClickHandler}>
+          <Button
+            variant="outline-secondary"
+            onClick={secondaryButton.onClickHandler}
+          >
             {secondaryButton.buttonText}
           </Button>
         )}
@@ -55,6 +58,5 @@ export default function BasicModel (props) {
         )}
       </Modal.Footer>
     </Modal>
-  )
+  );
 }
-

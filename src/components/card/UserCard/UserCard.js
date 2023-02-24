@@ -87,8 +87,8 @@ export default function UserCard() {
     setShowEditPopUp(false);
   };
   const handleUpdate = () => {
-    const isEmptyMessage = isEmpty(editUser,formDetails);
-    const validateDataMessage = validateData(editUser,formDetails);
+    const isEmptyMessage = isEmpty(editUser, formDetails);
+    const validateDataMessage = validateData(editUser, formDetails);
     if (!isEmptyMessage && !validateDataMessage) {
       userContext.users.forEach((user, index) => {
         if (user.id === editUser.id) {
@@ -223,11 +223,7 @@ export default function UserCard() {
                   <Card.Img
                     variant="top"
                     className="usercard-card-img"
-                    src={
-                      AVATAR_URL +
-                      user.username +
-                      AVARTAR_MODE
-                    }
+                    src={AVATAR_URL + user.username + AVARTAR_MODE}
                   />
                 </div>
                 <Card.Body>
