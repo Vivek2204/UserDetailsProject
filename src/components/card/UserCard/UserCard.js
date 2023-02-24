@@ -14,6 +14,7 @@ import FilledHeartIcon from "../../../assets/filled_heart.png";
 import Image from "../../models/BasicModel/ModelElements/Image/Image";
 import BasicModel from "../../models/BasicModel/BasicModel";
 import {
+  AVARTAR_MODE,
   CANCEL,
   DELETE,
   DELETE_HEADER,
@@ -225,7 +226,7 @@ export default function UserCard() {
                     src={
                       AVATAR_URL +
                       user.username +
-                      ".svg?options[mood][]=happy"
+                      AVARTAR_MODE
                     }
                   />
                 </div>

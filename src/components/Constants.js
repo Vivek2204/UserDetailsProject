@@ -14,3 +14,4 @@ export const DELETE_MODEL_TEXT = 'Are you sure you want to delete the user?'
 export const EDIT_HEADER = 'Edit User Details'
 export const UPDATE_SUCCESS = 'User is updated successfully'
 export const DELETE_SUCCESS = 'User is deleted successfully'
+export const AVARTAR_MODE =".svg?options[mood][]=happy"
