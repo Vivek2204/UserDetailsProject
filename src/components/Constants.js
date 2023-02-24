@@ -5,7 +5,7 @@ export const PHONE_REGEX = /^[0-9-+()x ]*$/
 export const WEBSITE_REGEX =
   // eslint-disable-next-line max-len
   /[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}/
-
+export const NAME_REGEX = /^[a-zA-Z ]{0,30}$/
 export const DELETE = 'Delete'
 export const CANCEL = 'Cancel'
 export const OK = 'Ok'
